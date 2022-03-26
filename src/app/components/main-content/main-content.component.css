@@ -1,0 +1,57 @@
+div.main-content {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    color: beige;
+}
+
+.main-content::before{
+    content: "";
+    background: url(../../../assets/images/bg.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    opacity: 0.9;
+
+}
+
+div#inner-content{
+    position: relative;
+    width: 65%;
+    margin: 100px 30px;
+    padding: 10px 50px;
+    align-self: center;
+}
+
+div#pic{
+    position: relative;
+    font-size: 50px;
+    width: 35%;
+    margin: 100px 30px;
+    padding: 10px 50px;
+    display: flex;
+    align-items: center;
+}
+
+div#welcome {
+    font-size: 70px;
+}
+
+div#intro {
+    font-size: 35px;
+}
+
+.profile-pic{
+    width: 200px;
+    height: 250px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px 0 rgba(234, 247, 240, 0.2), 0 6px 20px 0 rgba(234, 247, 240, 0.2);
+}
