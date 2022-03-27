@@ -32,7 +32,7 @@ export class ProjectsComponent implements OnInit {
       front: '', 
       back: '',
       tech: 'Python, Tkinter', 
-      href: 'https://github.com/anubhavc9/My-WhatsApp'
+      href: 'https://github.com/anubhavc9/typing-speed-test'
     },
     {
       cardNo: 'card-4', 
