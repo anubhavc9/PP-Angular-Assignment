@@ -5,65 +5,9 @@
     </div>
     <div class="cards">
 
-      <div class="card card-1">
-        <div class="card__icon"><h2>React Meals</h2></div>
-        <h2 class="card__title">
-            A full-stack MERN web application for ordering food online
-            <br>
-            <br>
-            <b>Frontend - </b>ReactJS
-            <br>
-            <b>Backend - </b>Node.js/Express, MongoDB, Jest, React Testing Library
-        </h2>
-        <p class="card__apply">
-          <a class="card__link" href="https://www.github.com/anubhavc9/Food-Order-App" target="_blank">GitHub link</a>
-        </p>
-      </div>
-
-      <div class="card card-2">
-        <div class="card__icon"><h2>My Messenger</h2></div>
-        <h2 class="card__title">
-            A real-time messaging web application using Socket.IO, a JavaScript library that enables real-time bi-directional communication between clients and servers
-            <br>
-            <br>
-            <b>Frontend - </b>HTML, CSS
-            <br>
-            <b>Backend - </b>Node.js, Socket.IO
-        </h2>
-        <p class="card__apply">
-          <a class="card__link" href="https://github.com/anubhavc9/My-WhatsApp" target="_blank">GitHub link</a>
-        </p>
-      </div>
-
-      <div class="card card-3">
-        <div class="card__icon"><h2>React Meals</h2></div>
-        <h2 class="card__title">
-            A full-stack MERN web application for ordering food online
-            <br>
-            <br>
-            <b>Frontend - </b>ReactJS
-            <br>
-            <b>Backend - </b>Node.js/Express, MongoDB, Jest, React Testing Library
-        </h2>
-        <p class="card__apply">
-          <a class="card__link" href="#">GitHub link</a>
-        </p>
-      </div>
-
-      <div class="card card-4">
-        <div class="card__icon"><h2>React Meals</h2></div>
-        <h2 class="card__title">
-            A full-stack MERN web application for ordering food online
-            <br>
-            <br>
-            <b>Frontend - </b>ReactJS
-            <br>
-            <b>Backend - </b>Node.js/Express, MongoDB, Jest, React Testing Library
-        </h2>
-        <p class="card__apply">
-          <a class="card__link" href="#">GitHub link</a>
-        </p>
-      </div>
+    <div *ngFor="let project of projects">
+        <app-project [cardNo]="project.cardNo" [title]="project.title" [desc]="project.desc" [front]="project.front" [back]="project.back" [href]="project.href"></app-project>
+    </div>
 
     </div>
   </div>
