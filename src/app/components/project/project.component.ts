@@ -12,6 +12,7 @@ export class ProjectComponent implements OnInit {
   @Input() public desc: any;
   @Input() public front: any;
   @Input() public back: any;
+  @Input() public tech: any;
   @Input() public href: any;
 
 
