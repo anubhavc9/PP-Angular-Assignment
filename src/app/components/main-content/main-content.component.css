@@ -94,3 +94,7 @@ div#intro {
     color: white;
     font-size: 16px;
 }
+
+.text a:hover{
+    text-decoration: underline;
+}
