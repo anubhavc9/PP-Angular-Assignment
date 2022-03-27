@@ -1,3 +1,7 @@
 #about {
     margin: 50px 70px;
 }
+
+.btn:hover {
+    transform: scale(1.1);
+}
