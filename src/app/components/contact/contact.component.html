@@ -1,1 +1,15 @@
-<p>contact works!</p>
+<div class="contact-outer">
+    <div class="contact-left">
+        <div *ngFor="let info of contactInfo" style="margin: 25px 0px;">
+            {{info.key}}
+        </div>
+    </div>
+    <div class="contact-right">
+        <div *ngFor="let info of contactInfo" style="margin: 25px 0px;">
+            <a *ngIf="info.link != ''; else elseBlock" href={{info.link}} target="_blank">{{info.value}}</a>
+            <ng-template #elseBlock>
+                {{info.value}}
+            </ng-template>
+        </div>
+    </div>
+</div>
