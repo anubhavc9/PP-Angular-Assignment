@@ -1,13 +1,15 @@
 <nav>
-  <label>
+    <label>
     <a class="logo" routerLink="/">My Portfolio</a>
   </label>
-  <ul>
-    <li><a routerLinkActive="active" routerLink="/" [routerLinkActiveOptions]="{exact: true}">Home</a></li>
-    <li><a routerLinkActive="active" routerLink="/about">About Me</a></li>
-    <li><a routerLinkActive="active" routerLink="/projects">Projects</a></li>
-    <li><a routerLinkActive="active" routerLink="/contact">Contact</a></li>
-  </ul>
+    <ul>
+        <li><a routerLinkActive="active" routerLink="/" [routerLinkActiveOptions]="{exact: true}">Home</a></li>
+        <li><a routerLinkActive="active" routerLink="/about">About Me</a></li>
+        <li><a routerLinkActive="active" routerLink="/projects">Projects</a></li>
+        <li><a routerLinkActive="active" routerLink="/contact">Contact</a></li>
+    </ul>
 </nav>
 
 <router-outlet></router-outlet>
+
+<app-footer></app-footer>
