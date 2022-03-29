@@ -15,8 +15,9 @@
     transform: scale(1.01);
 }
 
+
 /* CARD BACKGROUNDS */
-  
+
 .card-1 {
     background: radial-gradient(#1fe4f5, #3fbafe);
 }
@@ -41,6 +42,7 @@
     color: rgba(255, 255, 255, 0.9);
     grid-row: 2/3;
     font-size: 30px;
+    border-bottom: 3px solid white;
 }
 
 .card__title {
