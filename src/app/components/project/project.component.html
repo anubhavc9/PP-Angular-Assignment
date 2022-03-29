@@ -1,29 +1,36 @@
 <div *ngIf="tech === ''; else elseBlock" class="card" ngClass={{cardNo}}>
-    <div class="card__icon"><h2>{{title}}</h2></div>
+    <div class="card__icon">
+        <h2>{{title}}</h2>
+    </div>
     <h2 class="card__title">
-        {{desc}}
-        <br>
+        <div class="proj__desc">
+            {{desc}}
+        </div>
         <br>
         <b>Frontend - </b>{{front}}
         <br>
         <b>Backend - </b>{{back}}
     </h2>
     <p class="card__apply">
-      <a class="card__link" href={{href}} target="_blank">GitHub link</a>
+        <a class="card__link" href={{href}} target="_blank">GitHub link</a>
     </p>
 </div>
 
 <ng-template #elseBlock>
     <div class="card" ngClass={{cardNo}}>
-        <div class="card__icon"><h2>{{title}}</h2></div>
+        <div class="card__icon">
+            <h2>{{title}}</h2>
+        </div>
         <h2 class="card__title">
-            {{desc}}
+            <div class="proj__desc">
+                {{desc}}
+            </div>
             <br>
             <br>
             <b>Tech Used - </b>{{tech}}
         </h2>
         <p class="card__apply">
-          <a class="card__link" href={{href}} target="_blank">GitHub link</a>
+            <a class="card__link" href={{href}} target="_blank">GitHub link</a>
         </p>
     </div>
 </ng-template>

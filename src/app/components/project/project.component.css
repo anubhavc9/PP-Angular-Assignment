@@ -77,3 +77,7 @@
 .card__link:hover::after {
     width: 100%;
 }
+
+.proj__desc {
+    text-align: justify;
+}

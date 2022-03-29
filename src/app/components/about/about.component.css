@@ -5,3 +5,13 @@
 .btn:hover {
     transform: scale(1.1);
 }
+
+.lead {
+    text-align: justify;
+    font-size: 1.30rem;
+}
+
+.trail {
+    text-align: justify;
+    font-size: 1.20rem;
+}
