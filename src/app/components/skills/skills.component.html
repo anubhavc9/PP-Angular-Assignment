@@ -1,0 +1,12 @@
+<div class="container" style="padding: 10px 70px;">
+
+    <h2 class="my-4">TECHNICAL SKILLS</h2>
+    <br>
+    <div *ngFor="let ts of technical_skills">
+        <app-skill [category]="ts.category" [image]="ts.image" [values]="ts.values" [side]="ts.side"></app-skill>
+        <br>
+        <hr>
+        <br>
+    </div>
+
+</div>

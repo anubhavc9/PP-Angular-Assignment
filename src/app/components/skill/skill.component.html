@@ -1,0 +1,33 @@
+<div *ngIf="side === 'left'; else rightBlock">
+    <div class="row">
+
+        <div class="col-md-7" id="side-img">
+            <img class="img-fluid rounded mb-3 mb-md-0" src={{image}} alt="">
+        </div>
+
+        <div class="col-md-5" id="skills-list">
+            <h3>{{category}}</h3>
+            <ul>
+                <li *ngFor="let v of values">{{v}}</li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+
+<ng-template #rightBlock>
+    <div class="row">
+
+        <div class="col-md-5" id="skills-list">
+            <h3>{{category}}</h3>
+            <ul>
+                <li *ngFor="let v of values">{{v}}</li>
+            </ul>
+        </div>
+
+        <div class="col-md-7" id="side-img">
+            <img class="img-fluid rounded mb-3 mb-md-0" src={{image}} alt="">
+        </div>
+
+    </div>
+</ng-template>

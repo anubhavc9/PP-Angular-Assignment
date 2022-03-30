@@ -1,0 +1,19 @@
+#skills-list ul li {
+    font-size: 18px;
+}
+
+
+/* To make the image increase vertically with list size */
+
+
+/* #side-img {
+    height: auto;
+}
+
+#side-img img {
+    height: 100%;
+} */
+
+#side-img img {
+    height: 300px;
+}
