@@ -7,9 +7,9 @@ div.main-content {
     color: beige;
 }
 
-.main-content::before{
+.main-content::before {
     content: "";
-    background: url(../../../assets/images/bg2.jpg) no-repeat center center fixed; 
+    background: url(../../../assets/images/bg2.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -20,10 +20,9 @@ div.main-content {
     left: 0px;
     right: 0px;
     /* opacity: 0.85; */
-
 }
 
-div#inner-content{
+div#inner-content {
     position: relative;
     width: 65%;
     margin: 100px 30px;
@@ -31,7 +30,7 @@ div#inner-content{
     align-self: center;
 }
 
-div#pic{
+div#pic {
     position: relative;
     font-size: 50px;
     width: 35%;
@@ -54,7 +53,7 @@ div#intro {
     position: relative;
     width: 50%;
 }
-  
+
 .image {
     opacity: 1;
     display: block;
@@ -64,7 +63,7 @@ div#intro {
     backface-visibility: hidden;
     box-shadow: 0 4px 8px 0 rgba(234, 247, 240, 0.2), 0 6px 20px 0 rgba(234, 247, 240, 0.2);
 }
-  
+
 .middle {
     transition: .5s ease;
     opacity: 0;
@@ -74,15 +73,15 @@ div#intro {
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
 }
-  
+
 .container:hover .image {
     opacity: 0.3;
 }
-  
+
 .container:hover .middle {
     opacity: 1;
 }
-  
+
 .text {
     background-color: #9a9e9a;
     color: white;
@@ -90,12 +89,12 @@ div#intro {
     padding: 16px 32px;
 }
 
-.text a{
+.text a {
     text-decoration: none;
     color: white;
     font-size: 16px;
 }
 
-.text a:hover{
+.text a:hover {
     text-decoration: underline;
 }
