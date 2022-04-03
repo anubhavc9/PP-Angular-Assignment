@@ -23,7 +23,7 @@ export class ProjectsComponent implements OnInit {
       front: 'HTML, CSS', 
       back: 'Node.js, Socket.IO', 
       tech: '',
-      href: 'https://github.com/anubhavc9/My-WhatsApp'
+      href: 'https://github.com/anubhavc9/my-messenger'
     },
     {
       cardNo: 'card-3', 
