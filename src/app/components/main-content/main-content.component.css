@@ -34,7 +34,7 @@ div#obj {
     letter-spacing: 1px;
 }
 
-@media (max-width: 970px) {
+@media (max-width: 650px) {
     #outer {
         flex-direction: column;
         width: fit-content;
