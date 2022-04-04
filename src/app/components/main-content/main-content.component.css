@@ -24,6 +24,7 @@
 div#name {
     font-size: 60px;
     letter-spacing: 2px;
+    text-align: center;
 }
 
 div#obj {
@@ -31,4 +32,17 @@ div#obj {
     margin: 10px 58px;
     text-align: justify;
     letter-spacing: 1px;
+}
+
+@media (max-width: 970px) {
+    #outer {
+        flex-direction: column;
+        width: fit-content;
+    }
+    #inner1 {
+        width: auto;
+    }
+    #inner2 {
+        width: auto;
+    }
 }
