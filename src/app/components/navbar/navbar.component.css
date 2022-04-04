@@ -12,16 +12,11 @@ nav {
     height: 65px;
 }
 
-nav:hover {
-    border-bottom: 3px solid white;
-}
-
 a.logo {
     color: white;
     font-size: 35px;
     line-height: 60px;
     padding: 0px 75px;
-    /* font-weight: bold; */
 }
 
 nav ul {
@@ -40,11 +35,15 @@ nav ul li a {
     font-size: 17px;
     padding: 7px 13px;
     border-radius: 3px;
-    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 li a.active,
 li a:hover {
     background: grey;
     transition: 0.5s;
+}
+
+nav a:hover {
+    text-decoration: none;
 }
