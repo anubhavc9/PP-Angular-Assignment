@@ -1,15 +1,33 @@
-<div class="contact-outer">
-    <div class="contact-left">
-        <div *ngFor="let info of contactInfo" class="contact-left-inner">
-            {{info.key}}
+<div id="large-devices">
+    <div class="contact-outer">
+        <div class="contact-left">
+            <div *ngFor="let info of contactInfo" class="contact-left-inner">
+                {{info.key}}
+            </div>
+        </div>
+        <div class="contact-right">
+            <div *ngFor="let info of contactInfo" class="contact-right-inner">
+                <a *ngIf="info.link != ''; else elseBlock" href={{info.link}} target="_blank">{{info.value}}</a>
+                <ng-template #elseBlock>
+                    {{info.value}}
+                </ng-template>
+            </div>
         </div>
     </div>
-    <div class="contact-right">
-        <div *ngFor="let info of contactInfo" class="contact-right-inner">
-            <a *ngIf="info.link != ''; else elseBlock" href={{info.link}} target="_blank">{{info.value}}</a>
-            <ng-template #elseBlock>
+</div>
+
+<!-- the following div will be hidden & will only appear when width of the screeen becomes less than 700px -->
+<!-- once width becomes less than 700px, the above div (large devices) will be hidden -->
+<div id="small-devices">
+    <div id="contact-outer-smaller">
+        <div id="contact-key-value-wrapper" *ngFor="let info of contactInfo">
+            <div id="contact-key">
+                {{info.key}}
+            </div>
+            <div id="contact-value">
                 {{info.value}}
-            </ng-template>
+            </div>
+            <br>
         </div>
     </div>
 </div>

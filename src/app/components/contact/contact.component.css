@@ -3,13 +3,14 @@
 }
 
 .contact-left {
+    display: flex;
+    flex-wrap: wrap;
     background-color: var(--grey);
     color: white;
     width: 50%;
     height: 100vh;
     text-align: right;
     padding-right: 20px;
-    display: flex;
     flex-direction: column;
     justify-content: center;
     font-size: 30px;
@@ -18,16 +19,17 @@
 
 .contact-left-inner {
     letter-spacing: 2px;
-    font-size: 33px;
+    font-size: 30px;
     margin: 25px 0px;
     font-weight: 600;
 }
 
 .contact-right {
+    display: flex;
+    flex-wrap: wrap;
     width: 50%;
     height: 100vh;
     padding-left: 15px;
-    display: flex;
     flex-direction: column;
     justify-content: center;
     font-size: 30px;
@@ -42,4 +44,45 @@
 .contact-right a {
     color: black;
     text-decoration: none;
+}
+
+
+/* following CSS is for the smaller devices div that will only appear when width of the page is less than 700px */
+
+#small-devices {
+    display: none;
+}
+
+#contact-outer-smaller {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact-key {
+    text-align: center;
+    font-size: 22px;
+    letter-spacing: 1px;
+}
+
+#contact-value {
+    text-align: center;
+    font-size: 22px;
+    letter-spacing: 1px;
+}
+
+#contact-key-value-wrapper {
+    margin: 5px 0px;
+    border-bottom: 2px solid black;
+}
+
+@media (max-width: 700px) {
+    #small-devices {
+        display: block;
+    }
+    #large-devices {
+        display: none;
+    }
 }
