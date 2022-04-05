@@ -82,3 +82,18 @@
 .proj__desc {
     text-align: justify;
 }
+
+
+/* making the card responsive */
+
+@media (max-width: 450px) {
+    .card {
+        width: 330px;
+    }
+}
+
+@media (min-width: 450px) and (max-width: 550px) {
+    .card {
+        width: 400px;
+    }
+}
