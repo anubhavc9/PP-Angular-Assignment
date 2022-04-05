@@ -1,6 +1,7 @@
 #outer {
     display: flex;
     flex-direction: row;
+    margin-top: 10px;
 }
 
 #inner1 {
