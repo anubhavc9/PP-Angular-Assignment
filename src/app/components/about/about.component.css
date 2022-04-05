@@ -2,16 +2,53 @@
     margin: 50px 70px;
 }
 
+.jumbotron {
+    background-color: var(--grey);
+    color: white;
+    padding: 4rem 3rem;
+}
+
+.btn {
+    color: black;
+    background-color: white;
+    border: none;
+    letter-spacing: 1px;
+}
+
 .btn:hover {
     transform: scale(1.1);
+    background-color: white;
+    border: none;
+    color: black;
+    letter-spacing: 1px;
 }
 
 .lead {
-    text-align: justify;
-    font-size: 1.30rem;
+    font-size: 1.3rem;
 }
 
 .trail {
     text-align: justify;
     font-size: 1.20rem;
+}
+
+#ed-history-1 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#ed-history-2 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 780px) {
+    #ed-history-1 {
+        flex-direction: column;
+    }
+    #ed-history-2 {
+        flex-direction: column;
+    }
 }
