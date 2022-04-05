@@ -17,6 +17,7 @@
 
 .heading__title {
     font-weight: 600;
+    letter-spacing: 1px;
 }
 
 .heading__credits {
@@ -24,6 +25,7 @@
     color: #888888;
     font-size: 25px;
     transition: all 0.5s;
+    letter-spacing: 2px;
 }
 
 .heading__link {
