@@ -4,9 +4,9 @@ nav {
 
 nav ul li a {
     color: black;
-    letter-spacing: 2px;
-    font-size: 18px;
-    padding: 12px 25px;
+    letter-spacing: 3px;
+    font-size: 19px;
+    padding: 12px 27px;
 }
 
 li a.active,
