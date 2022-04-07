@@ -1,4 +1,5 @@
-# PpAngularAssignment
+# [Personal Portfolio](https://my-portfolio-anubhavc9.vercel.app/)
+## An AngularJS personal portfolio application with fully-responsive design
 
 # Deployment Link - https://my-portfolio-anubhavc9.vercel.app/
 
