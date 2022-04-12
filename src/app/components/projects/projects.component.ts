@@ -14,7 +14,7 @@ export class ProjectsComponent implements OnInit {
       front: 'HTML, CSS',
       back: 'Node.js, Socket.IO',
       tech: '',
-      href: 'https://joyful-hotteok-a3957a.netlify.app/'
+      href: 'https://anubhav-my-messenger.netlify.app/'
     },
     {
       cardNo: 'card-2',
